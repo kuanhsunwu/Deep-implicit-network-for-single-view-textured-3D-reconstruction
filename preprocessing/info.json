@@ -1,0 +1,22 @@
+{
+   "lst_dir": "./data/filelists",
+    "cats": {
+        "table": "04379243",
+        "guitar": "03467517",
+        "car": "02958343",
+        "chair":"03001627"
+        
+    },
+    "all_cats": [
+        "car",
+        "table",
+        "guitar",
+        "chair"
+    ],
+    "raw_dirs_v1": {
+     
+        "sdf_dir": "/media/sdb/kuanhsun/im2avatar/",
+        "rendered_dir": "/media/sdb/kuanhsun/im2avatar/",
+        "renderedh5_dir": "/media/sdb/kuanhsun/im2avatar/"
+    }
+}
