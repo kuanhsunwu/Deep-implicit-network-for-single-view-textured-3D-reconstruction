@@ -1,11 +1,28 @@
+# Deep implicit network for single-view textured 3D reconstruction
+Single-view textured 3D object reconstruction  
+
+	* Input:Asingleimage,cameramatrix 
+ 	* Output : Textured 3D object  
+
+ ![这是图片](example.png )  
+
+  In this paper, we propose a Deep implicit network for single-view textured 3D reconstruction, an end-to-end network which can reconstruct both 3D surface and texture from a single 2D image for multiple classes. Our network implicitly represents the 3D surface as the continuous decision boundary of a deep neural network classifier. In contrast to the explicit representation like voxel, mesh, and points cloud, our representation encodes a description of the 3D output at an infinite resolution without more memory usage. Furthermore, Our network first predicts geometry, followed by color, so that the color predictions can be directly informed by the geometric structure.
+
+# Architecture
+
+ Given an image of an object and a camera matrix, our method reconstructs the textured 3D shape by iteratively querying all the points in the sampled points cloud.
+
+ ![这是图片](overview.png )
+
+
 # Dependencies
-h5py==2.10.0
-open3d==0.10.0.0
-tensorflow == 1.10.0
-matplotlib==3.3.1
-opencv==4.2.0
-scikit-learn==0.23.2
-trimesh==3.8.13
+h5py==2.10.0  
+open3d==0.10.0.0  
+tensorflow == 1.10.0  
+matplotlib==3.3.1  
+opencv==4.2.0  
+scikit-learn==0.23.2  
+trimesh==3.8.13  
 
 # Data preparation
 ## Download data from Im2Avatar
@@ -45,12 +62,14 @@ python train/train_sdf.py
 ```
 python eval/eval.py
 ```
+![这是图片](eval.png )
+
 # Get Mesh
 
 * After getting the output sdf .txt file, run the code under the Desktop env to convert it to mesh
 
 ```
-python to_mesh.py
+python eval/to_mesh.py
 ``` 
 
 #Citation
