@@ -1,7 +1,7 @@
 # Deep implicit network for single-view textured 3D reconstruction
 Single-view textured 3D object reconstruction  
 
-* Input:A single image,camera matrix 
+* Input: A single image,camera matrix 
 * Output : Textured 3D object  
 
  ![这是图片](example.png )  
